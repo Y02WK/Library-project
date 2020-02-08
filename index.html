@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Library</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    </head>
+    <body>
+        <div class="flex-wrapper">
+            <div class="top-title">Read<span class="word-record">Record</span></div>
+            <div class="table-holder">
+                <table cellspacing="0" cellpadding="0">
+                    <thead><tr>
+                        <th id="th-title">Title</th>
+                        <th id="th-author">Author</th>
+                        <th id="th-read">Read?</th>
+                    </tr></thead>
+                    <tbody class="table-body">
+                    </tbody>
+                </table>
+                <div id="button-div"><button class=new-book-button onclick="createForm();">+</button></div>
+                <div class="form-div">
+                    <form class="input-form" onsubmit="return false">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

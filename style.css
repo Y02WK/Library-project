@@ -1,0 +1,162 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255)
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.top-title {
+    display: block;
+    /* margin-top: 50px; */
+    font-size: 3.5em;
+    text-align: left;
+    /* margin-left: 1em; */
+    color: rgb(216, 118, 118);
+    font-weight: bolder;
+}
+
+.word-record {
+    color: white;
+}
+
+.table-holder {
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 30px;
+}
+
+th {
+    /* border-bottom: 1.5px solid rgb(160, 160, 160); */
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#th-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(160,160,160);
+}
+
+#th-title {
+    width: 23em;
+}
+
+#th-author {
+    width: 15em;
+}
+
+#th-author:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(160,160,160);
+}
+
+#th-read {
+    width: 5em;
+}
+
+#th-read:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(160,160,160);
+}
+
+table {
+    /* border-spacing: 3em; */
+    margin-bottom: 2em;
+}
+
+.new-book-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    padding: 0px;
+    line-height: 10px;
+    margin-bottom: 2em;
+    
+    border-radius: 50%;
+    border: 1px solid rgb(95, 192, 95);
+    background-color: rgb(66, 66, 66);
+    color: rgb(95, 192, 95);   
+}
+
+.new-book-button:hover {
+    background-color: rgb(95, 192, 95);
+    color: rgb(66, 66, 66);
+}
+
+#button-div {
+    text-align: center;
+}
+
+.td-read {
+    text-align: center;
+}
+
+tbody > tr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+tbody > tr:hover {
+    background-color: rgb(95, 192, 95);
+}
+
+td {
+    /* padding-left: 30px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form > input {
+    border-radius: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid rgb(95, 186, 192);
+    background: rgb(66, 66, 66);
+    color: white;
+}
+
+#input-title {
+    width: 52%;
+    margin-right: 1em;
+}
+
+#input-author {
+    width: 32%;
+}
+
+#input-read {
+    margin-left: 2em;
+    zoom: 2;
+}
+
+#input-submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+label {
+    vertical-align: middle;
+}
