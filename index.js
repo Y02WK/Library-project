@@ -1,4 +1,3 @@
-const myLibrary = document.querySelector(".book-table");
 let libraryArray = []
 
 class Book {
@@ -13,7 +12,6 @@ function addBooktoLibrary () {
     let inputTitle = document.getElementById("input-title").value;
     let inputAuthor = document.getElementById("input-author").value;
     let inputRead = document.getElementById("input-read").checked;
-    //const formDiv = document.querySelector(".input-form");
     
     console.log(inputTitle + " " + inputAuthor + " " + inputRead)
     let newBook = new Book(inputTitle, inputAuthor, inputRead)
@@ -68,20 +66,20 @@ function removeForm() {
     readRemove.remove();
     submitRemove.remove();
     labelRemove.remove();
-
-    
 }
 
 function renderLibrary(newBook) {
     const content = document.querySelector(".table-body");
     const trCreate = document.createElement("tr");
-    let tdTitle = document.createElement("td")
-    let tdAuthor = document.createElement("td")
-    let tdRead = document.createElement("td")
-    tdTitle.classList.add("td-title");
-    tdAuthor.classList.add("td-author");
+    let tdTitle = document.createElement("td");
+    let tdAuthor = document.createElement("td");
+    let tdRead = document.createElement("td");
+    let tdDel = document.createElement("td");
+    let trDel = document.createElement("button");
     tdRead.classList.add("td-read");
+    trDel.classList.add("del-button");
 
+    trDel.textContent = "X";
     tdTitle.textContent = newBook.title;
     tdAuthor.textContent = newBook.author;
     if (newBook.read == true) {
@@ -91,8 +89,14 @@ function renderLibrary(newBook) {
     };
      
     content.appendChild(trCreate);
+    tdDel.appendChild(trDel);
     trCreate.appendChild(tdTitle);
     trCreate.appendChild(tdAuthor);
     trCreate.appendChild(tdRead);
+    trCreate.appendChild(tdDel);
+    
 }
 
+function deleteBook() {
+    
+}
